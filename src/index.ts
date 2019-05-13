@@ -2881,7 +2881,7 @@ Date.prototype.fp_incr = function(days: number | string) {
   );
 };
 
-if (typeof window !== "undefined") {
+if (typeof window !== "undefined" && window.flatpickr === undefined) {
   window.flatpickr = flatpickr;
 }
 
